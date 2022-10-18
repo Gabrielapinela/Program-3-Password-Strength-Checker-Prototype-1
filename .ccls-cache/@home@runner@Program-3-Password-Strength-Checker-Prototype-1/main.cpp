@@ -43,13 +43,15 @@ int run(string leaked_password_file, string english_word_file)
 
     //prompt user for password and check rules
     cout << "Enter a password: ";
-    cin >> password;
+    cin >> password; //takes input from user
 
     if(password.length() < 8)
     {
         cout << rule_msg_1;
-        return 1;
+        return 0;
+        
     }
+    
 
    
 
